@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">Smart thermostat fan</title>
+  <desc id="desc">Thermistor and setpoint readings drive fan PWM while displays, alarm and UART report system state.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#92a8c4"/></marker>
+    <style>
+      .bg { fill: #0d1726; }
+      .heading { fill: #f3f6fb; font: 700 27px Segoe UI, Arial, sans-serif; }
+      .subtitle { fill: #aebdd1; font: 15px Segoe UI, Arial, sans-serif; }
+      .card-title { fill: #f3f6fb; font: 700 19px Segoe UI, Arial, sans-serif; }
+      .card-copy { fill: #d1dbea; font: 15px Segoe UI, Arial, sans-serif; }
+      .arrow { fill: none; stroke: #92a8c4; stroke-width: 3; }
+      .arrow-label { fill: #c2d0e2; font: 13px Segoe UI, Arial, sans-serif; }
+      .footer { fill: #8ea2bb; font: 13px Segoe UI, Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect class="bg" width="100%" height="100%" rx="24"/>
+  <text x="40" y="47" class="heading">Smart thermostat fan</text>
+  <text x="40" y="75" class="subtitle">Thermistor and setpoint readings drive fan PWM while displays, alarm and UART report system state.</text>
+  <rect x="38" y="137" width="300" height="225" rx="18" fill="#17263b" stroke="#64c2a6" stroke-width="2"/>
+<rect x="38" y="137" width="300" height="8" rx="4" fill="#64c2a6"/>
+<text x="60" y="179" class="card-title">Inputs</text>
+<text x="60" y="214" class="card-copy">TMP61 thermistor · ADC 5</text>
+<text x="60" y="241" class="card-copy">Setpoint potentiometer · ADC 7</text>
+<text x="60" y="268" class="card-copy">PB1 mode · PB2 run / stop</text>
+<rect x="490" y="159" width="300" height="180" rx="18" fill="#17263b" stroke="#5f9ee8" stroke-width="2"/>
+<rect x="490" y="159" width="300" height="8" rx="4" fill="#5f9ee8"/>
+<text x="512" y="201" class="card-title">MSPM0G3507</text>
+<text x="512" y="236" class="card-copy">100 ms control loop</text>
+<text x="512" y="263" class="card-copy">SysTick software PWM</text>
+<text x="512" y="290" class="card-copy">Over-temperature check</text>
+<rect x="942" y="117" width="300" height="265" rx="18" fill="#17263b" stroke="#e9ad61" stroke-width="2"/>
+<rect x="942" y="117" width="300" height="8" rx="4" fill="#e9ad61"/>
+<text x="964" y="159" class="card-title">Outputs</text>
+<text x="964" y="194" class="card-copy">Fan PWM · PB22 · 4 kHz</text>
+<text x="964" y="221" class="card-copy">LCD temperature and mode</text>
+<text x="964" y="248" class="card-copy">SPI LED bar and 7-segment</text>
+<text x="964" y="275" class="card-copy">Buzzer · PB27 · UART logs</text>
+<path d="M338 246 L490 246" class="arrow" marker-end="url(#arrowhead)"/>
+<path d="M790 246 L942 246" class="arrow" marker-end="url(#arrowhead)"/>
+<text x="40" y="442" class="footer">Signal names and rates are taken from final_project_main.c.</text>
+</svg>
